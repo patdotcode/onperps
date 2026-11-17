@@ -1,0 +1,67 @@
+
+body {
+    background-color: #0b0d12;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    color: #f7931a;
+    font-size: 36px;
+}
+
+p {
+    color: #a1a1aa;
+    font-size: 18px;
+}
+.market-card {
+    background-color: #171a21;
+    border: 1px solid #30343c;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.market-card h3 {
+    color: #f7931a;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.market-card p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Responsive design for tablets */
+
+@media (max-width: 900px) {
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive design for phones */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .market-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
